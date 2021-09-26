@@ -1,0 +1,825 @@
+@font-face {
+  font-family: 'Pattaya';
+  src: url("../fonts/Pattaya/Pattaya-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url("../fonts/Ubuntu/Ubuntu-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url("../fonts/Ubuntu/Ubuntu-Light.ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/Lato/Lato-Regular.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/Lato/Lato-Light.ttf");
+  font-weight: 300;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -ms-overflow-style: scrollbar;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+h1 {
+  font-family: "Pattaya", sans-serif;
+  font-weight: 300;
+  font-size: 32.5px;
+  line-height: 38.5px;
+}
+
+h2 {
+  font-family: "Pattaya", sans-serif;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 34px;
+}
+
+h3 {
+  font-family: "Pattaya", sans-serif;
+  font-weight: 300;
+  font-size: 19px;
+  line-height: 25px;
+}
+
+p,
+.orderBannerTextForm_select,
+.orderBannerTextForm_input {
+  font-weight: 300;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #729742;
+  text-align: center;
+  color: #fff;
+  font-weight: 300;
+  font-family: "Pattaya", sans-serif;
+  font-size: 15px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  -webkit-transition: background-color 0.15s ease-out;
+  -o-transition: background-color 0.15s ease-out;
+  transition: background-color 0.15s ease-out;
+}
+
+.btn:hover {
+  background-color: #5f7d37;
+}
+
+body {
+  background-color: #fff;
+  color: #02091b;
+}
+
+.headerAndFooterContainer {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.headerAndFooterRow {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.fullLogo {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 50%;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+  text-align: center;
+}
+
+.fullLogoImg {
+  width: 100%;
+}
+
+.socialIcons {
+  display: none;
+  text-align: center;
+}
+
+.phoneNumber {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 50%;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+  text-align: center;
+  font-size: 20px;
+  color: #02091b;
+}
+
+.phoneNumber_number {
+  font-family: "Pattaya", sans-serif;
+  font-size: 20px;
+}
+
+.phoneNumber_callback {
+  font-family: "Pattaya", sans-serif;
+  font-size: 16px;
+  color: #466f18;
+  text-decoration: underline;
+}
+
+.primarySection {
+  background-image: url("../img/primaryListFone.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+}
+
+.primarySectionContainer {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 100%;
+}
+
+.primarySectionRow {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 400px;
+}
+
+.primaryBanner {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+  text-align: center;
+}
+
+.primaryBannerImg {
+  width: 100%;
+  max-width: 477px;
+}
+
+.primaryBannerText {
+  position: absolute;
+  text-align: center;
+  top: 12%;
+  right: 50%;
+  margin-right: -129.73px;
+}
+
+.primaryBannerText_h1,
+.primaryBannerText_p {
+  margin-bottom: 5px;
+}
+
+.primaryBannerText_btn {
+  padding: 10px 51px;
+}
+
+.advantagesSection_h1 {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.advantagesSectionContainer {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 100%;
+}
+
+.advantagesSectionRow {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.smallPost {
+  width: 180px;
+  height: 220px;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.largePost {
+  position: relative;
+  text-align: center;
+  margin-bottom: 20px;
+  width: 80%;
+  max-width: 379px;
+}
+
+.largePostFrame {
+  width: 100%;
+}
+
+.largePostInfo {
+  position: absolute;
+  text-align: center;
+  left: 16.385%;
+  width: 67.113%;
+  top: 14.372%;
+}
+
+.largePostInfo_Img {
+  width: 70%;
+  max-width: 170px;
+  margin-bottom: 2.639%;
+}
+
+.largePostInfo_h3 {
+  margin-bottom: 1.32%;
+}
+
+.main h3,
+.main p,
+.main .orderBannerTextForm_select,
+.main .orderBannerTextForm_input {
+  font-family: 'Lato', sans-serif !important;
+}
+
+.orderSection {
+  background-image: url("../img/orderListFone.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+}
+
+.orderSectionContainer {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 100%;
+}
+
+.orderSectionRow {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 550px;
+}
+
+.orderBanner {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+  text-align: center;
+}
+
+.orderBannerImg {
+  width: 90%;
+  max-width: 379px;
+}
+
+.orderBannerText {
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  margin-left: -23.704%;
+  width: 47.407%;
+  top: 14%;
+}
+
+.orderBannerText_p {
+  margin-bottom: 3.907%;
+}
+
+.orderBannerTextForm {
+  width: 100%;
+}
+
+.orderBannerTextForm_input::-webkit-input-placeholder {
+  color: #000;
+}
+
+.orderBannerTextForm_input::-moz-placeholder {
+  color: #000;
+}
+
+.orderBannerTextForm_input:-moz-placeholder {
+  color: #000;
+}
+
+.orderBannerTextForm_input:-ms-input-placeholder {
+  color: #000;
+}
+
+.orderBannerTextForm_select,
+.orderBannerTextForm_input {
+  font-weight: normal;
+  color: #000 !important;
+  height: 42px !important;
+  width: 100%;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-width: 0px;
+  border-color: #898989;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  margin-bottom: 6px;
+  border-style: solid;
+  background-color: #dfe0e0 !important;
+  padding: 0 16px !important;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.orderBannerTextForm_select:focus,
+.orderBannerTextForm_input:focus {
+  outline: none;
+  font-weight: 300;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+.orderBannerTextForm_btn {
+  border-width: 0;
+  width: 100%;
+  margin-top: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+
+.mapSectionText {
+  text-align: center;
+  position: relative;
+}
+
+.mapSectionText_h2 {
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.mapSectionText_p {
+  padding-bottom: 50px;
+}
+
+.mapSectionTextCircle {
+  background-color: #fff;
+  height: 100px;
+  width: 100px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  padding: 30px;
+  margin-left: -50px;
+  position: absolute;
+  left: 50%;
+  bottom: -55px;
+}
+
+.mapSection_map {
+  padding-left: 1%;
+  padding-right: 1%;
+  width: 100%;
+  height: 400px;
+}
+
+.headerAndFooterRow-footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media (min-width: 320px) {
+  .fullLogoImg {
+    width: 140px;
+  }
+}
+
+@media (min-width: 375px) {
+  .primarySectionRow {
+    height: 500px;
+  }
+
+  .primaryBannerText {
+    top: 20%;
+  }
+
+  .primaryBannerText_h1,
+  .primaryBannerText_p {
+    margin-bottom: 10px;
+  }
+
+  .largePostInfo {
+    top: 18%;
+  }
+
+  .orderSectionRow {
+    height: 650px;
+  }
+
+  .orderBannerText {
+    top: 20%;
+  }
+}
+
+@media (min-width: 450px) {
+  h1 {
+    font-size: 38px;
+    line-height: 44px;
+  }
+
+  h2 {
+    font-size: 34px;
+    line-height: 40px;
+  }
+
+  h3 {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  p,
+  .orderBannerTextForm_select,
+  .orderBannerTextForm_input {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .btn {
+    font-size: 20px;
+    line-height: 28.5px;
+  }
+
+  .fullLogo {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 33.33333%;
+    -ms-flex: 0 0 33.33333%;
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+  }
+
+  .socialIcons {
+    display: block;
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 33.33333%;
+    -ms-flex: 0 0 33.33333%;
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+  }
+
+  .phoneNumber {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 33.33333%;
+    -ms-flex: 0 0 33.33333%;
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+  }
+
+  .primaryBannerText {
+    top: 81.5px;
+    margin-right: -148.27px;
+  }
+}
+
+@media (min-width: 576px) {
+  .headerAndFooterContainer {
+    max-width: 540px;
+  }
+
+  .primarySectionContainer {
+    max-width: 540px;
+  }
+
+  .primarySectionRow {
+    height: 702px;
+  }
+
+  .primaryBannerImg {
+    width: auto;
+  }
+
+  .primaryBannerText_h1,
+  .primaryBannerText_p {
+    margin-bottom: 20px;
+  }
+
+  .advantagesSection_h1 {
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+
+  .advantagesSectionContainer {
+    max-width: 540px;
+  }
+
+  .largePost {
+    width: 379px;
+  }
+
+  .largePostInfo {
+    top: 71px;
+    left: 100px;
+    margin: 0;
+    width: 178.56px;
+  }
+
+  .largePostInfo_Img {
+    width: 170px;
+    margin-bottom: 20px;
+  }
+
+  .largePostInfo_h3 {
+    margin-bottom: 10px;
+  }
+
+  .orderSectionContainer {
+    max-width: 540px;
+  }
+
+  .orderSectionRow {
+    height: 767px;
+  }
+
+  .orderBannerImg {
+    width: 379px;
+  }
+
+  .orderBannerText {
+    top: 100px;
+    left: 50%;
+    margin-left: -128px;
+    width: 256px;
+  }
+
+  .orderBannerText_p {
+    margin-bottom: 20px;
+  }
+
+  .orderBannerTextForm_btn {
+    margin-top: 10px;
+  }
+
+  .mapSectionText_h2 {
+    padding-top: 60px;
+  }
+
+  .mapSectionText_p {
+    padding-bottom: 70px;
+  }
+}
+
+@media (min-width: 768px) {
+  .headerAndFooterContainer {
+    max-width: 720px;
+  }
+
+  .fullLogo {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 25%;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+
+  .socialIcons {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 25%;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+    margin-left: auto;
+  }
+
+  .phoneNumber {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 25%;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+    margin-left: auto;
+  }
+
+  .primarySectionContainer {
+    max-width: 720px;
+  }
+
+  .primaryBanner {
+    text-align: right;
+  }
+
+  .primaryBannerText {
+    right: 105px;
+    margin: 0;
+  }
+
+  .advantagesSectionContainer {
+    max-width: 720px;
+  }
+
+  .smallPost {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .orderSectionContainer {
+    max-width: 720px;
+  }
+
+  .orderBanner {
+    text-align: left;
+  }
+
+  .orderBannerText {
+    left: 76.5px;
+    margin: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .headerAndFooterContainer {
+    max-width: 960px;
+  }
+
+  .fullLogo {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 16.66667%;
+    -ms-flex: 0 0 16.66667%;
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%;
+  }
+
+  .socialIcons {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 16.66667%;
+    -ms-flex: 0 0 16.66667%;
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%;
+  }
+
+  .phoneNumber {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 16.66667%;
+    -ms-flex: 0 0 16.66667%;
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%;
+  }
+
+  .primarySectionContainer {
+    max-width: 960px;
+  }
+
+  .advantagesSectionContainer {
+    max-width: 960px;
+  }
+
+  .advantagesSectionRow {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: column wrap;
+    -ms-flex-flow: column wrap;
+    flex-flow: column wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 600px;
+  }
+
+  .smallPost {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .orderSectionContainer {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .headerAndFooterContainer {
+    max-width: 1140px;
+  }
+
+  .primarySectionContainer {
+    max-width: 1140px;
+  }
+
+  .advantagesSectionContainer {
+    max-width: 1140px;
+  }
+
+  .orderSectionContainer {
+    max-width: 1140px;
+  }
+}
